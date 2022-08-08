@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Image, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import bgImg from '../assests/media/splash.png'
-import Icon from 'react-native-vector-icons/Feather';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 
 const Login = () => {
@@ -10,7 +10,7 @@ const Login = () => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.backButton}>
-                <Icon name="arrow-left" size={30} color="#fff" />
+                <Icon name="arrowleft" size={30} color="#fff" />
             </View>
             <View style={styles.imgContainer}>
                 <Image source={bgImg} style={styles.bgImg} />
