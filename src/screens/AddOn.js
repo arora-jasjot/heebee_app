@@ -26,14 +26,19 @@ const AddOn = ({ coffee }) => {
                     <Text style={styles.backButton}>Back</Text>
                     <Text style={styles.heading}>Add On's</Text>
                     <ScrollView style={styles.addons}>
-                        <Text style={styles.sizeHeading}>Size</Text>
-                        <View style={styles.addOn}>
-                            <View style={styles.coffeeSizes}>
-                                <Image source={coffeeSize} style={styles.xlCoffee} />
-                                <Image source={coffeeSize} style={styles.lCoffee} />
-                                <Image source={coffeeSize} style={styles.sCoffee} />
-                            </View>
-                        </View>
+                        {
+                            coffee === true &&
+                            <>
+                                <Text style={styles.sizeHeading}>Size</Text>
+                                <View style={styles.addOn}>
+                                    <View style={styles.coffeeSizes}>
+                                        <Image source={coffeeSize} style={styles.xlCoffee} />
+                                        <Image source={coffeeSize} style={styles.lCoffee} />
+                                        <Image source={coffeeSize} style={styles.sCoffee} />
+                                    </View>
+                                </View>
+                            </>
+                        }
                         <View style={styles.addOn}>
                             <Pressable style={styles.addonheadingdiv} onPress={() => openAccordion(0)}>
                                 <Text style={styles.addOnHeading}>Bread</Text>

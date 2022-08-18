@@ -6,6 +6,9 @@ import SplashScreen from './src/screens/SplashScreen';
 
 import { StatusBar } from 'react-native';
 import AddOn from './src/screens/AddOn';
+import Menu from './src/screens/Menu';
+import Cart from './src/screens/Cart';
+import Checkout from './src/screens/Checkout';
 
 const App = () => {
   return (
@@ -16,7 +19,10 @@ const App = () => {
     <Login /> */}
       {/* <Home /> */}
       {/* <AddOn /> */}
-      <AddOn coffee={true} />
+      {/* <AddOn coffee={true} /> */}
+      {/* <Menu /> */}
+      {/* <Cart /> */}
+      <Checkout />
     </>
   );
 }
